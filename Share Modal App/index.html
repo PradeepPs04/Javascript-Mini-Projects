@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div id="wrapper">
+        
+        <div id="circle-1"></div>
+        <div id="circle-2"></div>
+
+        <div id="container">
+            <!--image-->
+            <div id="image-box">
+                <img src="./profile.jpeg" alt="profile-image">
+            </div>
+            
+            <h2 id="name">Sung Jin-woo</h2>
+
+            <h4 id="role">Hunter</h4>
+
+            <!--buttons-->
+            <div id="btn-box">
+                <button onclick="openShare()" id="share-btn" class="btn">
+                    <i class="fa-solid fa-share"></i>
+                    Share My Profile
+                </button>
+                <button class="btn" style="width: 150px;">Follow Me</button>
+            </div>
+
+        </div>
+
+        <div class="full-scr" onclick="closeShare()"></div>
+
+        <div class="share">
+            <div class="share-heading-primary">
+                <h2>Share My Profile</h2>
+                <i onclick="closeShare()" id="close-x" class="fa-solid fa-x"></i>
+            </div>
+            <div id="line"></div>
+            <div class="share-heading-secondary">
+                <h4>Share this via</h4>
+            </div>
+            <div class="social-icons">
+                <div class="icon" id="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="icon" id="x-twitter"><i class="fa-brands fa-x-twitter"></i></div>
+                <div class="icon" id="instagram"><i class="fa-brands fa-instagram"></i></div>
+                <div class="icon" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="icon" id="telegram"><i class="fa-brands fa-telegram"></i></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
