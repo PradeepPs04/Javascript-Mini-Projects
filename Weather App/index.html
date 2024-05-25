@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--importing font awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <h1 class="main-heading">Weather App</h1>
+
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+            <!--Location permission container-->
+            <div class="grant-location-container flex-col-center">
+                <img src="./assets/location.png" width="80" height="80" loading="lazy">
+                <p>grant location acess</p>
+                <p>Allow access to get weather information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>
+
+            <!--Search weather form-->
+            <form class="form-container">
+                <input type="text" placeholder="Search for City..." data-searchInput>
+                <button class="btn">
+                    <img src="./assets/search.png" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+
+            <!--Loading screen container-->
+            <div class="loading-container flex-col-center">
+                <img src="./assets/loading.gif" width="150" height="150">
+                <p>Loading</p>
+            </div>
+
+            <!--Not found container-->
+            <div class="not-found-container">
+                <img src="./assets/not-found.png">
+                <p>city not found</p>
+            </div>
+
+            <!--Weather information container-->
+            <div class="weather-info-container flex-col-center">
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+
+                <p data-weatherDesc></p>
+                <img data-weatherIcon>
+                <p data-temp></p>
+
+
+                <!--3 cards for extra weather info-->
+            <div class="weather-extra-info-container">
+
+                <!--Card-1-->
+                <div>
+                    <img src="./assets/wind.png">
+                    <p>Windspeed</p>
+                    <p data-windSpeed></p>
+                </div>
+
+                <!--Card-2-->
+                <div>
+                    <img src="./assets/humidity.png">
+                    <p>Humidity</p>
+                    <p data-humidity></p>
+                </div>
+
+                <!--Card-3-->
+                <div>
+                    <img src="./assets/cloud.png">
+                    <p>Clouds</p>
+                    <p data-cloud></p>
+                </div>
+                
+            </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

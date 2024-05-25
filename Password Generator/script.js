@@ -59,6 +59,10 @@ handle_slider();
 function handle_slider() {
   input_slider.value = password_length;
   length_display.textContent = password_length;
+
+  let min = input_slider.min;
+  let max = input_slider.max;
+  input_slider.style.backgroundSize = ((password_length - min) * 100 / (max - min)) + "% 100%";
 }
 
 // set the indicator color according to password strength
