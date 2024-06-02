@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevSearcher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <div class="main-container">
+
+        <div class="page-theme-container">
+          <h1 data-main-heading>DevSearcher</h1>
+
+          <div class="theme-btn-container" data-page-theme>
+            <p data-theme-name></p>
+            <img data-img-moon src="./assets/images/moon-icon.svg">
+            <img data-img-sun src="./assets/images/sun-icon.svg">
+          </div>
+        </div>
+
+            <form class="search-user-container">
+              <img src="./assets/images/search-icon.svg">
+              <input class="input-box" type="text" autocomplete="off" placeholder="Enter a GitHub username...">
+              <div class="clear-icon">
+                <span><i class="fa fa-close"></i></span>
+              </div>
+              <p class="no-result">no search results</p>
+              <button data-searchUser type="submit">Search</button>
+            </form>
+
+        <div class="user-details-container-outer">
+
+          <img class="user-img" data-user-img> 
+          
+          <div class="details-container-inner">
+            
+            <div class="name-join-container">
+
+              <div>
+                <h2 data-user-name></h2>
+                <a class="profile-link" data-profile-link target="_blank"></a>
+              </div>
+
+              <p data-join-date></p>
+            </div>
+
+          </div>
+
+          <p data-user-bio class="bio"></p>
+
+          <div class="profile-details">
+
+            <div class="repo stats">
+              <p data-profile-details-heading>Repos</p>
+              <p class="stat-data" data-repo-count></p>
+            </div>
+
+            <div class="followers stats">
+              <p data-profile-details-heading>Followers</p>
+              <p class="stat-data" data-followers-count></p>
+            </div>
+
+            <div class="following stats">
+              <p data-profile-details-heading>Following</p>
+              <p class="stat-data" data-following-count></p>
+            </div>
+
+          </div>
+
+          <div class="links">
+
+            <div>
+              <img src="./assets/images/location-icon.svg">
+              <p data-user-location></p>
+            </div>
+
+            <div>
+              <img src="./assets/images/website-icon.svg">
+              <a data-user-blog-link target="_blank"></a>
+            </div>
+
+            <div>
+              <img src="./assets/images/twitter-icon.svg">
+              <a data-user-twitter target="_blank"></a>
+            </div>
+
+            <div>
+              <img src="./assets/images/company-icon.svg">
+              <p data-user-company></p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
